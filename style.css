@@ -1,0 +1,86 @@
+body{
+    linear-gradient(to right: #3f53fb, #fc466f;);
+    background-color: aquamarine;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+}
+
+.game_window{
+   
+    justify-content: space-around;
+    text-align: center;
+
+    background-color: rgb(165, 42, 142);
+    position: relative;
+    margin: auto;
+    height: 650px;
+    width: 500px;
+    
+}
+
+h2{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.players{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.image_1{
+   
+    margin: 0px 25px;
+    
+    height: 150px;
+    width: 150px;
+}.image_2{
+    
+    margin:0px 25px ;
+    
+    height: 150px;
+    width: 150px;
+}
+
+.roll_the_dice {
+    position: absolute;
+    bottom: 50px;
+    margin: auto;
+    left: 130px;
+	background-color:#842e99;
+	border-radius:28px;
+	border:2px solid #3a0480;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:22px;
+	font-weight:bold;
+	font-style:italic;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:4px 1px 1px #b320b3;
+}
+.roll_the_dice:hover {
+	background-color:#a659d9;
+}
+.roll_the_dice:active {
+    
+	position:absolute;
+	font-size: 24px;
+    text-align: center;
+    bottom: 50px;
+    margin: auto;
+    left: 125px;
+}

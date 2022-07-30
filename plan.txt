@@ -1,0 +1,4 @@
+user selection
+user score
+role dice
+collect score

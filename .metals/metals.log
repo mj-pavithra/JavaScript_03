@@ -1,0 +1,18 @@
+2022.07.27 21:27:16 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\UCSC couses\2 year semester 1\Rapid App dev\Javascript assignment 3\.metals\lsp.trace.json or C:\Users\mjpav\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.07.27 21:27:18 INFO  logging to file D:\UCSC couses\2 year semester 1\Rapid App dev\Javascript assignment 3\.metals\metals.log
+2022.07.27 21:27:18 INFO  Started: Metals version 0.11.7 in workspace 'D:\UCSC couses\2 year semester 1\Rapid App dev\Javascript assignment 3' for client Visual Studio Code 1.69.2.
+2022.07.27 21:27:20 INFO  time: initialize in 1.48s
+2022.07.27 21:27:20 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.27 21:27:20 WARN  Build server is not auto-connectable.
+2022.07.27 21:27:20 WARN  no build tool detected in workspace 'D:\UCSC couses\2 year semester 1\Rapid App dev\Javascript assignment 3'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Jul 27, 2022 9:35:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 27, 2022 9:36:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 28, 2022 1:10:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 28, 2022 1:11:26 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jul 28, 2022 1:13:43 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.07.28 01:22:53 INFO  shutting down Metals
