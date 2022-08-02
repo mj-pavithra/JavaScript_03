@@ -1,67 +1,68 @@
+var score_user1 = 0;
+var score_user2 = 0;
+let player1Turn = true;
 
-var player1Score = 0;
-var player2Score = 0;
-var player1Turn = true;
+
+//variables referance to DOM
+
+const dice1 = document.getElementById('dice_image_1');
+const dice2 = document.getElementById('dice_image_2');
+
+const player1Score = document.getElementById('player1_score');
+const player2Score = document.getElementById('player2_score');
+
+const rollButton = document.getElementById("roll_dices");
+
+rollButton.addEventListener("click", function () {
 
 
- //variables referance to DOM
+    const a = Math.floor(Math.random() * 6) + 1;
+    const b = Math.floor(Math.random() * 6) + 1;
 
- var dice1 = document.getElementById('dice_image_1');
- var dice2 = document.getElementById('dice_image_2');
 
- var player1Score = document.getElementsById('player1_score');
- var player2Score = document.getElementsById('player2_score');
- 
- var rollButton = document.getElementsByCId("roll_dice");
- 
- roll_dices.addEventListener("click" , function (){ 
-    var score = 0;
-    var a = Math.floor(Math.random()*6)+1;
-    var b = Math.floor(Math.random()*6)+1;
-     
-    
-    var Image1 ='dice_'+a+'.png';
-    var Image2 = 'dice_'+b+'.png';
+    const Image1 = 'Dice_Images/dice_' + a + '.png';
+    const Image2 = 'Dice_Images/dice_' + b + '.png';
 
     document.querySelector('.image_1').setAttribute('src', Image1);
     document.querySelector('.image_2').setAttribute('src', Image2);
 
-    
+    if (player1Turn) {
 
-    if(player1Turn){
-
-        if(a==b ){
-            
-            if(a==1){
-                score = 0;
+        if (a == b) {
+            score_user1 += (a + b);
+            if (a == 1) {
+                score_user1 = 0;
                 player1Turn = !player1Turn;
+                player1Score.innerHTML = score_user1;
+                return;
             }
-            score = a+b;
+            player1Score.innerHTML = score_user1;
         }
-        else{
-            player1Score = score + player1Score;
+        else {
+            score_user1 += (a + b);
             player1Turn = !player1Turn;
+            player1Score.innerHTML = score_user1;
+            return;
         }
-        document.getElementsById('player1_score').innerHTML = player1Score;
+
 
     }
-    else{
-        if(a==b ){
-            
-            if(a==1){
-                score = 0;
+    else {
+        if (a == b) {
+            score_user2 += (a + b);
+            if (a == 1) {
+                score_user2 = 0;
                 player1Turn = !player1Turn;
+                player2Score.innerHTML = score_user2;
+                return;
             }
-            score = a+b;
-            document.getElementsById('player1_score').innerHTML = player1Score;
+            player2Score.innerHTML = score_user2;
         }
-        else{
-            player1Score = score + player1Score;
+        else {
+            score_user2 += (a + b);
+            player2Score.innerHTML = score_user2;
             player1Turn = !player1Turn;
             return;
         }
-        document.getElementsbyId('player2_score').innerHTML = player2Score;
     }
-
 })
-
